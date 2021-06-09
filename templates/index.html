@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+    <head>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Author Meta -->
+        <meta name="author" content="Themefisher">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        <meta charset="utf-8">
+
+        <!-- Site Title -->
+        <title>zBlock Explorer</title>
+
+
+
+        <!--
+        CSS
+        ============================================= -->
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/justifiedGallery.min.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/et-font.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/animate.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/owl.theme.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style2.css') }}">
+
+        <script src="{{ url_for('static', filename='js/modernizr-custom.js') }}"></script>
+
+    </head>
+	
+    <body>
+        <!-- #preloader -->
+        <div id="preloader">
+            <div class="preloader loading">
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+            </div>
+        </div>
+        <!-- end #preloader -->
+
+        <header>
+            
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img src="{{ url_for('static', filename='img/logo.jpg') }}" height="60" width="150" alt="">
+                                </a>
+                            </div>
+                        
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav navbar-right main-menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#service">Features</a></li>
+                                    <li><a href="#case-study">Case Study</a></li>
+
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section id="slider">
+            
+                    <div id="banner-slider" class="owl-carousel">
+                        <div>
+                            <div class="banner-side slide-1">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center">
+                                            <img data-wow-duration=".2s" class="wow zoomIn slider-img" 
+                                                 src="{{ url_for('static', filename='img/banner-character.png') }}" alt="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="content">
+                                                <h1 data-wow-delay=".5s" class="wow fadeInRight">The Most Advanced Blockchain Explorer</h1>
+                                                <p data-wow-delay=".9s" class="wow fadeInRight">Explore Transactions, Blocks, Wallets, Statistics, ...</p>
+                                                <a href="{{ url_for('info') }}" class="btn btn-explore">zBlock Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div>
+                             <div class="banner-side slide-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center slide-right">
+                                            <img class="slider-img" src="{{ url_for('static', filename='img/banner-character.png') }}" alt="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="content text-right">
+                                                <h1>Explore Transactions, Blocks, Wallets, ...</h1>
+                                                <p>The Most Advanced Blockchain Explorer and Statistics</p>
+                                                <a href="{{ url_for('info') }}" class="btn btn-explore">zBlock Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+        </section>
+
+ 
+
+        <!-- process -->
+        <div id="service" class="process section">
+            <div class="container">
+                <div class="title">
+                    <h2>The Working Process</h2>
+                    <p>A wonderful serenity has taken possession of our entire soul,<br> 
+                        like these sweet mornings of spring which we enjoy with our whole heart.</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="service-block-2 text-center">
+                            <div class="icon-holder">
+                                <i class="icon-telescope"></i>
+                            </div>
+                            <h4 class="heading">Design</h4>
+                            <p class="description">Your Desired Interface.                        </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="service-block-2 text-center">
+                            <div class="icon-holder">
+                                <i class="icon-mobile"></i>
+                            </div>
+                            <h4 class="heading">Development</h4>
+                            <p class="description">Custom Blockchain Projects.                        </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="service-block-2 text-center">
+                            <div class="icon-holder">
+                                <i class="icon-pencil"></i>
+                            </div>
+                            <h4 class="heading">Branding</h4>
+                            <p class="description">Custom Logo and Company Name                        </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="service-block-2 text-center">
+                            <div class="icon-holder">
+                                <i class="icon-mobile"></i>
+                            </div>
+                            <h4 class="heading">Statistics</h4>
+                            <p class="description">All You Need yo Know.                        </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="service-block-2 text-center">
+                            <div class="icon-holder">
+                                <i class="icon-telescope"></i>
+                            </div>
+                            <h4 class="heading">Analysis</h4>
+                            <p class="description">Deep Insight into Transactions.                        </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="service-block-2 text-center">
+                            <div class="icon-holder">
+                                <i class="icon-pencil"></i>
+                            </div>
+                            <h4 class="heading">Reports</h4>
+                            <p class="description">Special Reports and Hot News!                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- case-study -->
+        <div id="case-study" class="case-study section">
+            <div class="container" style="text-align:center;">
+                <div class="title">
+                    <h2>CASE STUDY</h2>
+                    <br/>
+                    Geo Statistics of Bitcoin Full Nodes Around the World
+                </div>
+             <a href="{{ url_for('static', filename='concept/concept-map.html') }}">   
+                 <img src="{{ url_for('static', filename='img/world_map_peers.png') }}" width="70%"  />
+             </a>
+            </div>
+        </div>
+            
+        <footer class="footer">
+            <div class="conainer text-center wow zoomIn">
+
+                <div class="copyright">
+                    <p>Copyright:<a href="http://www.zblock.ir">zBlock</a>, All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--
+        JavaScripts
+        ========================== -->
+        
+
+        <script src="{{ url_for('static', filename='js/vendor/jquery-1.11.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.justifiedGallery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        
+        <!-- gallery -->
+        <script src="{{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/classie.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/grid.js') }}"></script>
+        <script>
+            (function() {
+                var support = { transitions: Modernizr.csstransitions },
+                    // transition end event name
+                    transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+                    transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+                    onEndTransition = function( el, callback ) {
+                        var onEndCallbackFn = function( ev ) {
+                            if( support.transitions ) {
+                                if( ev.target != this ) return;
+                                this.removeEventListener( transEndEventName, onEndCallbackFn );
+                            }
+                            if( callback && typeof callback === 'function' ) { callback.call(this); }
+                        };
+                        if( support.transitions ) {
+                            el.addEventListener( transEndEventName, onEndCallbackFn );
+                        }
+                        else {
+                            onEndCallbackFn();
+                        }
+                    };
+
+                new GridFx(document.querySelector('.grid'), {
+                    imgPosition : {
+                        x : -0.5,
+                        y : 1
+                    },
+                    onOpenItem : function(instance, item) {
+                        instance.items.forEach(function(el) {
+                            if(item != el) {
+                                var delay = Math.floor(Math.random() * 50);
+                                el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                                el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                                el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+                                el.style.transform = 'scale3d(0.1,0.1,1)';
+                                el.style.opacity = 0;
+                            }
+                        });
+                    },
+                    onCloseItem : function(instance, item) {
+                        instance.items.forEach(function(el) {
+                            if(item != el) {
+                                el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+                                el.style.transition = 'opacity .4s, transform .4s';
+                                el.style.WebkitTransform = 'scale3d(1,1,1)';
+                                el.style.transform = 'scale3d(1,1,1)';
+                                el.style.opacity = 1;
+
+                                onEndTransition(el, function() {
+                                    el.style.transition = 'none';
+                                    el.style.WebkitTransform = 'none';
+                                });
+                            }
+                        });
+                    }
+                });
+            })();
+        </script>
+        
+        
+    </body>
+</html>

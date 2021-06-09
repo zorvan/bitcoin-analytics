@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,400,600');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+}
+
+
+// Variables
+@link-color:        #428bca; // sea blue
+@link-color-hover:  darken(@link-color, 15%);
+
+a {
+    text-decoration: none;
+    
+    color: @link-color;
+    &:hover{
+        color: @link-color-hover
+    }
+ 
+    &:visited:not(.btn){
+        color: purple;
+    }
+}
+
+
+p {
+    font-size:1.1em;
+    margin: 1em 0;
+}
+
+.description {
+  margin: 1em auto 2.25em;
+}
+
+body {
+    width: 80%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: 1.5em auto;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  
+    .inner {
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+      
+        &.show {
+          /*display: block;*/
+        }
+    }
+  
+    li {
+        margin: .5em 0;
+      
+        a.toggle {
+            width: 100%;
+            display: block;
+            background: rgba(0,0,0,0.78);
+            color: #fefefe;
+            padding: .75em;
+            border-radius: 0.15em;
+            transition: background .3s ease;
+          
+            &:hover {
+                background: rgba(0, 0, 0, 0.9);
+            }
+        }
+    }
+}
+
+
+
+tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+tr:hover {
+        background-color: #E0F5D5;
+    }
+
+#time {
+    color: #808020;
+    font-weight: bold;
+}
+
+#height {
+    color: #808020;
+    font-weight: bold;
+}
+
+#value {
+    color: #f02020;
+    font-weight: bold;
+}
+
+#txid {
+    color: #2020c0;
+    font-weight: bold;
+}
